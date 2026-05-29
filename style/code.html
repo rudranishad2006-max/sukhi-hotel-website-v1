@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lounge &amp; Gallery | Sukhi Hotel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#c7c7c2",
+                    "on-surface-variant": "#444748",
+                    "secondary-fixed-dim": "#e9c176",
+                    "background": "#fbf9f8",
+                    "secondary-container": "#fed488",
+                    "secondary": "#775a19",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#464744",
+                    "on-tertiary-fixed": "#1b1c19",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1b1c1c",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e4e2e2",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#dbd9d9",
+                    "primary": "#000000",
+                    "surface-bright": "#fbf9f8",
+                    "surface-container-high": "#eae8e7",
+                    "primary-container": "#1c1b1b",
+                    "on-secondary-fixed": "#261900",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#848480",
+                    "on-surface": "#1b1c1c",
+                    "surface-tint": "#5f5e5e",
+                    "on-primary-container": "#858383",
+                    "surface-container-low": "#f5f3f3",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#e5e2e1",
+                    "outline-variant": "#c4c7c7",
+                    "surface": "#fbf9f8",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-container": "#efeded",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "tertiary-fixed": "#e3e3de",
+                    "outline": "#747878",
+                    "tertiary": "#000000",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffdea5",
+                    "inverse-on-surface": "#f2f0f0",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "inverse-primary": "#c8c6c5",
+                    "tertiary-container": "#1b1c19",
+                    "on-secondary-container": "#785a1a",
+                    "on-primary-fixed-variant": "#474746",
+                    "inverse-surface": "#303030",
+                    "surface-container-highest": "#e4e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "margin-desktop": "80px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["Plus Jakarta Sans"],
+                    "display-lg": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"],
+                    "headline-md": ["EB Garamond"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["EB Garamond"],
+                    "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-gold { color: #e9c176; }
+        .bg-gold { background-color: #e9c176; }
+        .border-gold { border-color: #e9c176; }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 768px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        .masonry-item { break-inside: avoid; margin-bottom: 1.5rem; }
+        .sultry-overlay {
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-surface border-b border-outline-variant/20">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight uppercase">
+                Sukhi Hotel
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary-fixed-dim transition-all duration-300" href="#">Menu</a>
+<a class="text-secondary-fixed-dim border-b-2 border-secondary-fixed-dim pb-1 font-label-md text-label-md" href="#">Lounge</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary-fixed-dim transition-all duration-300" href="#">Gallery</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary-fixed-dim transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider scale-95 hover:scale-100 duration-150 ease-in-out">
+                Book a Table
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-end overflow-hidden bg-primary">
+<div class="absolute inset-0 z-0">
+<img alt="Sultry Lounge Ambiance" class="w-full h-full object-cover opacity-60" data-alt="A wide-angle interior shot of a sophisticated luxury hotel lounge at night. Deep velvet armchairs in charcoal and emerald green are arranged around low marble tables. The lighting is warm and dim, provided by elegant brass floor lamps and flickering candlelight. The atmosphere is smoky, exclusive, and quiet, with a polished wooden floor reflecting the soft golden glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7D-bh8tbLtkUzihWkKvCiwrgbvxZ8qvyZ-Wt_7x4BQ4lXyNf5eWr4Hx_m59MPhKJnH_6ej6de01z5_2h-pNvg-m4H9IxNNhSNLsCuZZqk5SDr1k4xc0M_hRJjsZqJcfvZsHBZICXG7NEGd58raiYA0WS8XYDF0g9LY_BiUFd6g74CCYG6KRc031koVhu_W-EHnikbMXlyfkQZN1fcEOBQbT9B770BonmKeWyKSuQarbv_3XtqlNZQzCogKIEgkZbLqlco5HcvgKyA"/>
+<div class="absolute inset-0 sultry-overlay"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop pb-20">
+<div class="max-w-2xl">
+<span class="text-gold font-label-md text-label-md tracking-[0.2em] uppercase mb-4 block">The Nocturnal Sanctuary</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">Sukhi Lounge &amp; Gallery</h1>
+<p class="text-white/80 font-body-lg text-body-lg">Where the heritage of Indian hospitality meets the dark allure of a modern speakeasy. Experience a curated collection of art alongside world-class mixology.</p>
+</div>
+</div>
+</section>
+<!-- Intro Text -->
+<section class="py-section-gap max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-start-2 md:col-span-4 flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg mb-8 leading-tight">A Canvas for the Senses</h2>
+<div class="w-12 h-[1px] bg-gold mb-8"></div>
+</div>
+<div class="md:col-span-6">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
+                    Our lounge is more than a bar; it's a living gallery. Each month, we curate a selection of contemporary Indian art that lines our charcoal-washed walls. Sip on botanical infusions while surrounded by masterpieces that challenge and inspire.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80">
+                    From the hand-carved teak accents to the custom-designed brass fixtures, every element of the Sukhi Lounge is a testament to Modern Heritage.
+                </p>
+</div>
+</section>
+<!-- Masonry Gallery -->
+<section class="pb-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1280px] mx-auto">
+<div class="masonry-grid">
+<!-- Gallery Item 1 -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container">
+<img alt="Signature Cocktail" class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" data-alt="Close up of a luxury cocktail glass on a dark stone counter. The drink is a deep amber liquid with a single large clear ice cube and a sprig of aromatic herb. Golden backlighting creates a beautiful bokeh effect with warm light dots. The overall aesthetic is dark, moody, and highly detailed, reflecting professional food photography in a high-end lounge setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT99B0WuSIC0rqiSs866tsmCvfdibvh_3H5OUl8LoYH76fRu7i-6RxvvQ5eneANRuFvX6tN3qNLgwywwyUm1ULvFsI0SMEhraK6VAtTKHokiANLtKjbCbM1KMKTKgSO8C17qCgy75l2TFLWDDAWA2C8sMETS2KxVi4m6X63cl7-cXEIPGFp7oXnOWNJafkQM10nkivYsv0uO4kGi-U7neVGPmozZFv9kZlkOPheKnljbTLj61WSC6kDDll2bvPfigh4OHg8xDc_Xaa"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-label-md text-label-md uppercase tracking-widest">Mixology Masters</p>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container h-[500px]">
+<img alt="Live Jazz" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" data-alt="A silhouette of a jazz musician playing a saxophone under a single focused warm spotlight in a dark, atmospheric lounge. The background is pitch black, emphasizing the golden light hitting the brass instrument and the musician's profile. Smoke or haze caught in the light beam adds texture and mood to the composition. Minimalist luxury style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUu895aPMhcgcbPhYla4Uha1mw-RpwvBBAUu38tgfqDAE7k0sy7Ysnm-qa6z9AQv_zBtrZ9NvI6_GOKX5S0p_EWarLF3begcU5qbtwXJXroQvC6cFucHkfG60X7xxCzsGaL33EViv8yTxS1Rt_pF9x7sPVBvSQjAQwOD2O32ndZL3E4-1yD-kt5aWNJsG3cyllPmWKn8A1QlpJ0p722oRu58e7eQ4oV5U0dLq6K4Y3f4FxxpZhrH2p_jERYs_vLpCxDBpZx7lu9ZJi"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<p class="text-white font-label-md text-label-md uppercase tracking-widest">Jazz Evenings</p>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container">
+<img alt="Lounge Seating" class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" data-alt="Top-down view of a designer marble coffee table in a dark lounge. On the table sits an open art book, a small gold bowl of almonds, and a crystal tumbler of whiskey. The flooring is dark polished wood. Soft side lighting casts long, elegant shadows. The mood is intellectual, calm, and expensive. Professional interior design photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAddY_LuHu1MlmB8CUFbMDwm2qfpQq8At9Nb3-qGWC2eL3Z4FVBsygRXFAOceB6mXjaA9EZ1mMgIcAhdDR2eC8CECW6nixGQ2sNVDPREv7iSbE2hw5MPR4FwIeFsZOGsQ0HCp_nfUuekmvlAeqCETFcNbn6MY85nznUp-OApB0hF0FK0R2GM8ea0vSwIhEaT5HdcUGl7xQUg9Z1MLSO_3N-sLPGWJRFQHXhzXRCkp_i8A84vdCWxoknIlBYRy8Pani1uDjqh1OlKsWM"/>
+</div>
+<!-- Gallery Item 4 -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container h-[400px]">
+<img alt="Art Installation" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" data-alt="A modern abstract painting with vibrant gold leaf and deep blue oil paint hanging on a textured charcoal gray wall. The art is illuminated by two precise ceiling spotlights. The surrounding space is dark, drawing all attention to the texture and color of the artwork. High-end art gallery aesthetic within a luxury hotel context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEYVsJtPuR9VvFtUai9IDj_yEi7vSUB6W5PBZa-f5UYSlNWqoH2UOrjAPnD2K4JhBI9IvpaCqjzOLdiC_aUvW1SbnSRjP_dUmrGC-eplkRQg-IuzAl4AXTz8W7IGPlU7ZsFoPAjSvQwS9aprtG21n1UoTmXC8UzUydPvA45s8oK4EO3xTYtS6JxnvWFFamBHjifd6fZvkK6YdA7QwlKqpDUYU8ZZn7zeOBrxHz9wRXEVcIW0R2hERSKqEKRvAKRZ2J0uVsNRneAHhI"/>
+</div>
+<!-- Gallery Item 5 -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container">
+<img alt="Warm Lighting Details" class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" data-alt="Macro shot of a designer brass lamp with a warm glowing filament bulb. The light reflects off a dark textured wall and a nearby glass surface. The focus is sharp on the metal detail and the warm orange glow of the light. The background is a soft blur of a dark, luxurious lounge interior. Extremely high quality, warm, and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSt_l7K0p7aKUWu_oUcdiVFPLVcqodAmnEVbevot9KTGzuTw02mPpyzczBmFui5NWWD_a_dNgaVMLalS678zBKebyasT3ieViHy84W13jUJzV0U_DDkXtSbjlwomf_gntkBkwbuf1-ON5bjcAi2ymx01Ufji09aQLkCq31ind6fd9WbCT_fCWW2rkjpfUEUa54s-BHfguIh_NuUVwes6BO9t36scJJbg3JwylCFa54vLN7Y-WfYJe-HmFV7tyXHXbqfDIvkotg7H4o"/>
+</div>
+<!-- Gallery Item 6 -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container">
+<img alt="Wine Cellar" class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out" data-alt="A glimpse into a temperature-controlled wine cellar with back-lit glass shelves holding hundreds of bottles. The light is a soft amber, silhouetting the bottles. The surrounding frame is dark iron and glass. The perspective is from the lounge looking in, suggesting exclusivity and a vast collection of fine spirits and wines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiZ63maHJXmsnomH54eQbZd69w5Va5kqFywsiNFtm7VuyQONDyn2vNu2X-M_-zVbjEjpFWvtMIohnALER5pYxI8sHcqGRNXnTeBxfZqaYOO1UcMqSpIz-1rBcoluupTDwDJnTHUN-9SQPIjaTmxfhpqecep04uUf8luIxCgRLVrH1gM-iiltwG5QI5mkFoEiBuB8nfiaiU9S6smI1KVH43vAq9P-Pj2YZvGhwUeDg8uGW7Eoj36iUXmT92tXUPQGCBg7isu6yxyds3"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Events Section -->
+<section class="bg-primary text-white py-section-gap overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1">
+<span class="text-gold font-label-md text-label-md tracking-widest uppercase mb-4 block">After Hours</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8">Rhythms &amp; Rituals</h2>
+<div class="space-y-12">
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-16 h-16 border border-white/20 flex flex-col items-center justify-center group-hover:border-gold transition-colors">
+<span class="font-label-md text-[12px] opacity-60">FRI</span>
+<span class="font-headline-md leading-none">21</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Midnight Jazz Series</h3>
+<p class="text-white/60 font-body-md mb-4">Featuring the soulful sounds of the Bombay Quartet. An intimate evening of improvisational jazz and rare single malts.</p>
+<a class="text-gold font-label-md text-label-md border-b border-gold/30 hover:border-gold transition-all pb-1 uppercase" href="#">Reserve a Corner</a>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-16 h-16 border border-white/20 flex flex-col items-center justify-center group-hover:border-gold transition-colors">
+<span class="font-label-md text-[12px] opacity-60">SAT</span>
+<span class="font-headline-md leading-none">22</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">The Curator's Tour</h3>
+<p class="text-white/60 font-body-md mb-4">A private walkthrough of the monthly gallery exhibition with our resident curator, followed by an artist-inspired cocktail pairing.</p>
+<a class="text-gold font-label-md text-label-md border-b border-gold/30 hover:border-gold transition-all pb-1 uppercase" href="#">Limited Access</a>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 relative aspect-[4/5] bg-surface-container-highest">
+<img alt="Live Singer" class="w-full h-full object-cover" data-alt="A portrait of a female jazz singer in a vintage sequined dress, standing before a classic silver microphone. Her eyes are closed in emotion, and she is bathed in a dramatic side-light that highlights the texture of her dress and the smoke in the air. The background is a dark, warm-toned lounge. The mood is soulful, cinematic, and sultry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQqMek5tlfL7OwjwA1ZmdiB67IBasfNMHIcvCd-LG5RI3N0yJ0rXYFPtHycpfe2vGJ6HDP6nY4wMLKPzISElaOSy4QT7hI-fGVKbnG-0fFp7gVai9WYVY2yEQ0nVeSQ7f9d4HL7CDfj-sJbNrr1xBd3y3udhKjMiqAFzwp_8pcsF9hH--hstUWySrhC3pfYvloIpX_J1oqW-YTrI2a1JIN8fp26l9J8BjikvvaN_m4JGZsAQnYB3OKHuwCW4vuRmdah6lM6xxvKO_D"/>
+<div class="absolute -bottom-8 -left-8 bg-gold p-8 hidden md:block">
+<p class="text-primary font-headline-md italic">"Where every evening becomes a masterpiece."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer CTA -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg mb-6">Stay in the Circle</h2>
+<p class="max-w-xl mx-auto text-on-surface-variant font-body-lg mb-10">Receive exclusive invitations to gallery openings, private performances, and seasonal menu reveals.</p>
+<form class="max-w-md mx-auto flex gap-4">
+<input class="flex-grow bg-transparent border-b-2 border-primary focus:border-gold outline-none py-3 px-2 font-body-md transition-colors" placeholder="Your Email Address" type="email"/>
+<button class="bg-primary text-white px-8 py-3 font-label-md text-label-md uppercase tracking-wider hover:bg-gold hover:text-primary transition-colors">Join</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-highest w-full py-16 border-t border-outline-variant/20">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1">
+<div class="font-headline-md text-headline-md text-primary mb-6">Sukhi Hotel</div>
+<p class="text-on-surface-variant font-body-md opacity-80">Refining the art of luxury through Modern Heritage and timeless hospitality.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-widest">Experience</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">Private Dining</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-widest">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-widest">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined text-[18px]">camera</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-outline-variant/10 text-center text-on-surface-variant/60 font-label-md text-[12px]">
+            © 2024 Sukhi Hotel &amp; Lounge. All rights reserved.
+        </div>
+</footer>
+<script>
+        // Subtle micro-interactions
+        document.querySelectorAll('.masonry-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.querySelector('img').style.transform = 'scale(1.05)';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('img').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body></html>
