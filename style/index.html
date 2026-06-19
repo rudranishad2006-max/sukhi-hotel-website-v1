@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sukhi Hotel & Restaurant | A Sanctuary of Modern Heritage</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#c7c7c2",
+              "on-surface-variant": "#444748",
+              "secondary-fixed-dim": "#e9c176",
+              "background": "#fbf9f8",
+              "secondary-container": "#fed488",
+              "secondary": "#775a19",
+              "error": "#ba1a1a",
+              "on-background": "#1b1c1c",
+              "on-error": "#ffffff",
+              "surface-variant": "#e4e2e2",
+              "on-tertiary": "#ffffff",
+              "surface-dim": "#dbd9d9",
+              "primary": "#000000",
+              "surface-bright": "#fbf9f8",
+              "surface-container-high": "#eae8e7",
+              "primary-container": "#1c1b1b",
+              "on-secondary-fixed": "#261900",
+              "error-container": "#ffdad6",
+              "on-tertiary-container": "#848480",
+              "on-surface": "#1b1c1c",
+              "surface-tint": "#5f5e5e",
+              "on-primary-container": "#858383",
+              "surface-container-low": "#f5f3f3",
+              "on-error-container": "#93000a",
+              "primary-fixed": "#e5e2e1",
+              "outline-variant": "#c4c7c7",
+              "surface": "#fbf9f8",
+              "on-primary-fixed": "#1c1b1b",
+              "surface-container": "#efeded",
+              "on-secondary-fixed-variant": "#5d4201",
+              "tertiary-fixed": "#e3e3de",
+              "outline": "#747878",
+              "tertiary": "#000000",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#ffdea5",
+              "inverse-on-surface": "#f2f0f0",
+              "primary-fixed-dim": "#c8c6c5",
+              "inverse-primary": "#c8c6c5",
+              "tertiary-container": "#1b1c19",
+              "on-secondary-container": "#785a1a",
+              "on-primary-fixed-variant": "#474746",
+              "inverse-surface": "#303030",
+              "surface-container-highest": "#e4e2e2"
+            },
+            borderRadius: {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem"
+            },
+            spacing: {
+              "section-gap": "120px",
+              "margin-desktop": "80px",
+              "gutter": "24px",
+              "margin-mobile": "20px",
+              "base": "8px"
+            },
+            fontFamily: {
+              "label-md": ["Plus Jakarta Sans"],
+              "display-lg": ["EB Garamond"],
+              "headline-lg": ["EB Garamond"],
+              "headline-md": ["EB Garamond"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "display-lg-mobile": ["EB Garamond"],
+              "body-md": ["Plus Jakarta Sans"]
+            },
+            fontSize: {
+              "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+              "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+              "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+              "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+              "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+              "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+              "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-gold { color: #e9c176; }
+        .bg-gold { background-color: #e9c176; }
+        .border-gold { border-color: #e9c176; }
+        .sultry-overlay {
+            background: linear-gradient(180deg, rgba(26,26,26,0.1) 0%, rgba(26,26,26,0.9) 100%);
+        }
+        .luxury-card:hover .card-img {
+            transform: scale(1.05);
+        }
+        .luxury-card:hover .gold-bar {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+
+<!-- Navigation -->
+<header class="sticky top-0 w-full z-50 bg-[#141414]/95 backdrop-blur-md border-b border-white/10">
+    <nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto">
+        <a href="index.html" class="flex flex-col">
+            <span class="font-headline-lg text-[22px] md:text-headline-lg text-white tracking-widest uppercase font-semibold leading-none">Sukhi</span>
+            <span class="font-label-md text-[9px] text-gold uppercase tracking-[0.4em] mt-1">Hotel & Restaurant</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-gold border-b border-gold pb-0.5 font-label-md text-label-md" href="index.html">Home</a>
+            <a class="text-white/80 hover:text-gold font-label-md text-label-md transition-all duration-300" href="restaurant.html">Restaurant</a>
+            <a class="text-white/80 hover:text-gold font-label-md text-label-md transition-all duration-300" href="hotel.html">Hotel & Booking</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="hotel.html" class="border border-gold text-gold hover:bg-gold hover:text-primary px-5 py-2.5 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider transition-all duration-300">
+                Book a Suite
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="relative h-[85vh] min-h-[600px] flex items-end overflow-hidden bg-primary">
+        <div class="absolute inset-0 z-0">
+            <img alt="Sukhi Modern Heritage" class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_8s_infinite]" src="images/hotel_suite.png"/>
+            <div class="absolute inset-0 sultry-overlay"></div>
+        </div>
+        <div class="relative z-10 w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop pb-24">
+            <div class="max-w-3xl">
+                <span class="text-gold font-label-md text-label-md tracking-[0.25em] uppercase mb-4 block">Est. 2026 • Luxury Sanctuary</span>
+                <h1 class="font-display-lg text-display-lg-mobile md:text-[72px] text-white mb-6 leading-[1.1]">Where Tradition Meets Dark Modernity</h1>
+                <p class="text-white/80 font-body-lg text-body-lg mb-8 max-w-xl">
+                    Experience Sukhi, a sanctuary where premium boutique lodging and highly curated Indian & Chinese culinary craftsmanship converge into an unforgettable artistic experience.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="hotel.html" class="inline-block text-center bg-gold text-primary font-label-md text-label-md uppercase tracking-wider py-4 px-8 rounded-DEFAULT font-semibold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg">
+                        Explore Rooms
+                    </a>
+                    <a href="restaurant.html" class="inline-block text-center border border-white text-white font-label-md text-label-md uppercase tracking-wider py-4 px-8 rounded-DEFAULT font-semibold hover:bg-white hover:text-primary transition-all duration-300">
+                        View Restaurant Menu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Dual Pillars: Hotel & Restaurant Teasers -->
+    <section class="py-section-gap max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center mb-16">
+            <span class="text-secondary font-label-md text-label-md tracking-[0.2em] uppercase mb-3 block">Curated Journeys</span>
+            <h2 class="font-display-lg text-[36px] md:text-headline-lg text-primary">Discover the Art of Sukhi</h2>
+            <div class="w-16 h-[1px] bg-gold mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Restaurant Pillar -->
+            <div class="luxury-card group flex flex-col justify-between bg-surface-container-low border border-outline-variant/10 rounded-DEFAULT overflow-hidden transition-all duration-500 hover:shadow-2xl">
+                <div class="relative h-[400px] overflow-hidden">
+                    <img alt="Sukhi Restaurant Fine Dining" class="card-img w-full h-full object-cover transition-transform duration-700 ease-in-out" src="images/indian_food.png"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
+                        <div>
+                            <span class="text-gold font-label-md text-[12px] tracking-widest uppercase block mb-1">Fine Dining Gastronomy</span>
+                            <h3 class="font-headline-lg text-white">Sukhi Restaurant</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="font-body-md text-on-surface-variant leading-relaxed mb-6">
+                            A legendary culinary landscape presenting the majestic flavours of the east. Divided into two masterfully crafted halls: the aromatic heritage of **Indian Food** and the refined textures of **Chinese Food**.
+                        </p>
+                        <div class="flex items-center gap-8 mb-8 border-t border-b border-outline-variant/10 py-4">
+                            <div>
+                                <span class="block font-label-md text-[11px] text-on-surface-variant/60 uppercase">The Spice Trail</span>
+                                <span class="font-headline-md text-[18px] text-primary">Indian Cuisine</span>
+                            </div>
+                            <div class="w-[1px] h-8 bg-outline-variant/20"></div>
+                            <div>
+                                <span class="block font-label-md text-[11px] text-on-surface-variant/60 uppercase">The Jade Pavilion</span>
+                                <span class="font-headline-md text-[18px] text-primary">Chinese Cuisine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="gold-bar w-12 h-[2px] bg-gold transition-all duration-500 mb-4"></div>
+                        <a href="restaurant.html" class="inline-flex items-center gap-2 text-primary font-label-md uppercase tracking-wider hover:text-gold transition-colors font-bold">
+                            Reserve a Table <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Pillar -->
+            <div class="luxury-card group flex flex-col justify-between bg-surface-container-low border border-outline-variant/10 rounded-DEFAULT overflow-hidden transition-all duration-500 hover:shadow-2xl">
+                <div class="relative h-[400px] overflow-hidden">
+                    <img alt="Sukhi Boutique Suite" class="card-img w-full h-full object-cover transition-transform duration-700 ease-in-out" src="images/hotel_suite.png"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
+                        <div>
+                            <span class="text-gold font-label-md text-[12px] tracking-widest uppercase block mb-1">Boutique Lodging</span>
+                            <h3 class="font-headline-lg text-white">The Sanctuary</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="font-body-md text-on-surface-variant leading-relaxed mb-6">
+                            An exclusive hotel collection offering customized retreat rooms and grand suites. Designed with high-fashion charcoal surfaces, glowing brass fixtures, and soft velvet touches for pure tranquility.
+                        </p>
+                        <div class="flex items-center gap-8 mb-8 border-t border-b border-outline-variant/10 py-4">
+                            <div>
+                                <span class="block font-label-md text-[11px] text-on-surface-variant/60 uppercase">Sanctuary Comfort</span>
+                                <span class="font-headline-md text-[18px] text-primary">Plush Interiors</span>
+                            </div>
+                            <div class="w-[1px] h-8 bg-outline-variant/20"></div>
+                            <div>
+                                <span class="block font-label-md text-[11px] text-on-surface-variant/60 uppercase">Tailored Stay</span>
+                                <span class="font-headline-md text-[18px] text-primary">Premium Booking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="gold-bar w-12 h-[2px] bg-gold transition-all duration-500 mb-4"></div>
+                        <a href="hotel.html" class="inline-flex items-center gap-2 text-primary font-label-md uppercase tracking-wider hover:text-gold transition-colors font-bold">
+                            Book Your Stay <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lounge & Speakeasy Section (Reusing code.html aesthetic) -->
+    <section class="bg-primary text-white py-section-gap overflow-hidden">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <span class="text-gold font-label-md text-label-md tracking-widest uppercase mb-4 block">The Nocturnal Lounge</span>
+                <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Rhythms, Jazz & Rare Malts</h2>
+                <p class="text-white/70 font-body-lg mb-8 leading-relaxed">
+                    Sip on botanical infusions while surrounded by contemporary Indian art lining our charcoal-washed walls. Weekly jazz evenings and curator tours invite you into a deeper sensory journey.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex gap-4 border-l-2 border-gold/40 pl-6 py-1">
+                        <div>
+                            <h4 class="font-headline-md text-[20px] text-white">Midnight Jazz Fridays</h4>
+                            <p class="text-white/50 text-[14px]">Intimate improvisational sets and single malt tastings.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 border-l-2 border-gold/40 pl-6 py-1">
+                        <div>
+                            <h4 class="font-headline-md text-[20px] text-white">Saturday Curator's Walk</h4>
+                            <p class="text-white/50 text-[14px]">Private art installation tour paired with custom speakeasy cocktails.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative aspect-[4/5] bg-surface-container-highest rounded-DEFAULT overflow-hidden">
+                <img alt="Sultry Speakeasy Atmosphere" class="w-full h-full object-cover opacity-80" src="images/chinese_food.png"/>
+                <div class="absolute -bottom-6 -left-6 bg-gold p-8 max-w-sm hidden md:block">
+                    <p class="text-primary font-headline-md italic leading-tight">"Where every evening becomes a masterpiece."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials or Philosophy -->
+    <section class="py-section-gap bg-surface">
+        <div class="max-w-[800px] mx-auto px-margin-mobile text-center">
+            <span class="material-symbols-outlined text-gold text-[48px] mb-6">format_quote</span>
+            <blockquote class="font-display-lg text-[28px] md:text-[36px] text-primary italic leading-snug mb-8">
+                "Sukhi balances the extreme quietude of a luxury hideout with a sensory explosion of rich tandoori smoke and sharp dim sum steam. Truly the epitome of Modern Indian Heritage."
+            </blockquote>
+            <cite class="font-label-md text-label-md text-secondary uppercase tracking-[0.2em] not-italic">— Luxury Escape Journal</cite>
+        </div>
+    </section>
+
+    <!-- Footer Newsletter -->
+    <section class="py-16 bg-surface-container-low border-t border-outline-variant/10">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop text-center">
+            <h2 class="font-headline-lg text-headline-lg mb-4 text-primary">Stay in the Circle</h2>
+            <p class="max-w-xl mx-auto text-on-surface-variant font-body-md mb-8">Receive exclusive invitations to gallery previews, secret menus, and boutique suite release dates.</p>
+            <form class="max-w-md mx-auto flex gap-4">
+                <input class="flex-grow bg-transparent border-b-2 border-primary focus:border-gold outline-none py-3 px-2 font-body-md transition-colors" placeholder="Your Email Address" type="email" required/>
+                <button class="bg-primary text-white hover:bg-gold hover:text-primary px-8 py-3 font-label-md text-label-md uppercase tracking-wider transition-colors duration-300">Join</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-white/80 w-full py-16">
+    <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+            <div class="font-headline-lg text-[28px] text-white tracking-widest uppercase mb-4">Sukhi</div>
+            <p class="text-white/60 font-body-md leading-relaxed">Refining the art of high-end lodging and classic gastronomy through Modern Indian Heritage.</p>
+        </div>
+        <div>
+            <h4 class="font-label-md text-label-md text-gold mb-6 uppercase tracking-widest">Explore</h4>
+            <ul class="space-y-3">
+                <li><a class="hover:text-gold transition-colors text-[15px]" href="restaurant.html">Sukhi Restaurant Menu</a></li>
+                <li><a class="hover:text-gold transition-colors text-[15px]" href="hotel.html">Boutique Stay & Booking</a></li>
+                <li><a class="hover:text-gold transition-colors text-[15px]" href="index.html">The Speakeasy Lounge</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-label-md text-label-md text-gold mb-6 uppercase tracking-widest">Connect</h4>
+            <p class="text-white/60 font-body-md mb-2">108 Palace Ridge Road, Jaipur, Rajasthan</p>
+            <p class="text-white/60 font-body-md">reservations@sukhihotel.com</p>
+        </div>
+        <div>
+            <h4 class="font-label-md text-label-md text-gold mb-6 uppercase tracking-widest">Social</h4>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors" href="#">
+                    <span class="material-symbols-outlined text-[18px]">share</span>
+                </a>
+                <a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors" href="#">
+                    <span class="material-symbols-outlined text-[18px]">camera</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 text-center text-white/40 font-label-md text-[12px]">
+        © 2026 Sukhi Hotel & Restaurant. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sukhi Hotel | Boutique Sanctuary Room Booking & Suites</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#c7c7c2",
+              "on-surface-variant": "#444748",
+              "secondary-fixed-dim": "#e9c176",
+              "background": "#fbf9f8",
+              "secondary-container": "#fed488",
+              "secondary": "#775a19",
+              "error": "#ba1a1a",
+              "on-background": "#1b1c1c",
+              "on-error": "#ffffff",
+              "surface-variant": "#e4e2e2",
+              "on-tertiary": "#ffffff",
+              "surface-dim": "#dbd9d9",
+              "primary": "#000000",
+              "surface-bright": "#fbf9f8",
+              "surface-container-high": "#eae8e7",
+              "primary-container": "#1c1b1b",
+              "on-secondary-fixed": "#261900",
+              "error-container": "#ffdad6",
+              "on-tertiary-container": "#848480",
+              "on-surface": "#1b1c1c",
+              "surface-tint": "#5f5e5e",
+              "on-primary-container": "#858383",
+              "surface-container-low": "#f5f3f3",
+              "on-error-container": "#93000a",
+              "primary-fixed": "#e5e2e1",
+              "outline-variant": "#c4c7c7",
+              "surface": "#fbf9f8",
+              "on-primary-fixed": "#1c1b1b",
+              "surface-container": "#efeded",
+              "on-secondary-fixed-variant": "#5d4201",
+              "tertiary-fixed": "#e3e3de",
+              "outline": "#747878",
+              "tertiary": "#000000",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#ffdea5",
+              "inverse-on-surface": "#f2f0f0",
+              "primary-fixed-dim": "#c8c6c5",
+              "inverse-primary": "#c8c6c5",
+              "tertiary-container": "#1b1c19",
+              "on-secondary-container": "#785a1a",
+              "on-primary-fixed-variant": "#474746",
+              "inverse-surface": "#303030",
+              "surface-container-highest": "#e4e2e2"
+            },
+            borderRadius: {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem"
+            },
+            spacing: {
+              "section-gap": "120px",
+              "margin-desktop": "80px",
+              "gutter": "24px",
+              "margin-mobile": "20px",
+              "base": "8px"
+            },
+            fontFamily: {
+              "label-md": ["Plus Jakarta Sans"],
+              "display-lg": ["EB Garamond"],
+              "headline-lg": ["EB Garamond"],
+              "headline-md": ["EB Garamond"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "display-lg-mobile": ["EB Garamond"],
+              "body-md": ["Plus Jakarta Sans"]
+            },
+            fontSize: {
+              "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+              "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+              "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+              "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+              "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+              "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+              "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-gold { color: #e9c176; }
+        .bg-gold { background-color: #e9c176; }
+        .border-gold { border-color: #e9c176; }
+        .sultry-overlay {
+            background: linear-gradient(180deg, rgba(26,26,26,0.2) 0%, rgba(26,26,26,0.9) 100%);
+        }
+        .room-card:hover .room-img {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+
+<!-- Navigation -->
+<header class="sticky top-0 w-full z-50 bg-[#141414]/95 backdrop-blur-md border-b border-white/10">
+    <nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto">
+        <a href="index.html" class="flex flex-col">
+            <span class="font-headline-lg text-[22px] md:text-headline-lg text-white tracking-widest uppercase font-semibold leading-none">Sukhi</span>
+            <span class="font-label-md text-[9px] text-gold uppercase tracking-[0.4em] mt-1">Hotel & Restaurant</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-white/80 hover:text-gold font-label-md text-label-md transition-all duration-300" href="index.html">Home</a>
+            <a class="text-white/80 hover:text-gold font-label-md text-label-md transition-all duration-300" href="restaurant.html">Restaurant</a>
+            <a class="text-gold border-b border-gold pb-0.5 font-label-md text-label-md" href="hotel.html">Hotel & Booking</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="#booking-portal" class="border border-gold text-gold hover:bg-gold hover:text-primary px-5 py-2.5 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider transition-all duration-300">
+                Book a Suite
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hotel Hero -->
+    <section class="relative h-[55vh] min-h-[400px] flex items-end overflow-hidden bg-primary">
+        <div class="absolute inset-0 z-0">
+            <img alt="Sukhi Boutique Hotel Sanctuary" class="w-full h-full object-cover opacity-50" src="images/hotel_suite.png"/>
+            <div class="absolute inset-0 sultry-overlay"></div>
+        </div>
+        <div class="relative z-10 w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop pb-16">
+            <div class="max-w-2xl">
+                <span class="text-gold font-label-md text-label-md tracking-[0.25em] uppercase mb-3 block">Private Sanctuary</span>
+                <h1 class="font-display-lg text-[44px] md:text-[60px] text-white mb-4">Timeless Living</h1>
+                <p class="text-white/80 font-body-lg text-body-lg">
+                    Recharging the mind in tailored luxury. Explore our premium heritage suites designed with natural stone, glowing brass, and pure tranquility.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suites Showcase -->
+    <section class="py-section-gap max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center mb-16">
+            <span class="text-gold font-label-md text-label-md tracking-[0.2em] uppercase mb-3 block">The Rooms</span>
+            <h2 class="font-display-lg text-[36px] md:text-headline-lg text-primary">Luxury Suite Collection</h2>
+            <div class="w-16 h-[1px] bg-gold mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Room 1: Heritage Suite -->
+            <div class="room-card group flex flex-col justify-between bg-surface-container border border-outline-variant/15 rounded-DEFAULT overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative h-[280px] overflow-hidden">
+                        <img alt="Sukhi Heritage Suite" class="room-img w-full h-full object-cover transition-transform duration-500" src="images/hotel_suite.png"/>
+                        <div class="absolute top-4 left-4 bg-primary text-white font-label-md text-[11px] uppercase tracking-widest px-3 py-1.5 rounded-DEFAULT">
+                            $350 / Night
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-display-lg text-[24px] text-primary mb-3">Heritage Suite</h3>
+                        <p class="font-body-md text-on-surface-variant/90 leading-relaxed text-[14px] mb-6">
+                            A masterclass in quiet heritage. Features authentic hand-woven Jaipur carpets, dark carved teak headboards, a private hand-cut stone balcony, and an organic clay bath tub.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 border-t border-outline-variant/10 flex items-center justify-between">
+                    <span class="font-label-md text-[11px] uppercase text-on-surface-variant/70 tracking-widest flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-gold">bed</span> 1 King Bed</span>
+                    <a href="#booking-portal" onclick="selectRoom('heritage')" class="text-secondary font-label-md text-[12px] uppercase tracking-wider font-bold hover:underline">Select & Book</a>
+                </div>
+            </div>
+
+            <!-- Room 2: Royal Palace Room -->
+            <div class="room-card group flex flex-col justify-between bg-surface-container border border-outline-variant/15 rounded-DEFAULT overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative h-[280px] overflow-hidden">
+                        <img alt="Sukhi Royal Palace Room" class="room-img w-full h-full object-cover transition-transform duration-500" src="images/chinese_food.png"/>
+                        <div class="absolute top-4 left-4 bg-primary text-white font-label-md text-[11px] uppercase tracking-widest px-3 py-1.5 rounded-DEFAULT">
+                            $500 / Night
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-display-lg text-[24px] text-primary mb-3">Royal Palace Room</h3>
+                        <p class="font-body-md text-on-surface-variant/90 leading-relaxed text-[14px] mb-6">
+                            Live in pure majesty. An expansive layout surrounded by high-vaulted brick arches, authentic Rajasthani gold-leaf accents, custom velvet couches, and a marble bathing chamber.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 border-t border-outline-variant/10 flex items-center justify-between">
+                    <span class="font-label-md text-[11px] uppercase text-on-surface-variant/70 tracking-widest flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-gold">bed</span> 1 Royal King</span>
+                    <a href="#booking-portal" onclick="selectRoom('palace')" class="text-secondary font-label-md text-[12px] uppercase tracking-wider font-bold hover:underline">Select & Book</a>
+                </div>
+            </div>
+
+            <!-- Room 3: Presidential Gold Suite -->
+            <div class="room-card group flex flex-col justify-between bg-surface-container border border-outline-variant/15 rounded-DEFAULT overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative h-[280px] overflow-hidden">
+                        <img alt="Sukhi Presidential Gold Suite" class="room-img w-full h-full object-cover transition-transform duration-500" src="images/indian_food.png"/>
+                        <div class="absolute top-4 left-4 bg-primary text-white font-label-md text-[11px] uppercase tracking-widest px-3 py-1.5 rounded-DEFAULT">
+                            $950 / Night
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-display-lg text-[24px] text-primary mb-3">Presidential Gold Suite</h3>
+                        <p class="font-body-md text-on-surface-variant/90 leading-relaxed text-[14px] mb-6">
+                            The pinnacle of Sukhi sanctuary living. Includes a private infinity outdoor plunge pool, full private butler service, an integrated fine art gallery, and a majestic glowing brass fireplace.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 border-t border-outline-variant/10 flex items-center justify-between">
+                    <span class="font-label-md text-[11px] uppercase text-on-surface-variant/70 tracking-widest flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-gold">bed</span> Grand King Suite</span>
+                    <a href="#booking-portal" onclick="selectRoom('presidential')" class="text-secondary font-label-md text-[12px] uppercase tracking-wider font-bold hover:underline">Select & Book</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Grid -->
+    <section class="bg-primary text-white py-20 border-t border-b border-outline-variant/10">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-3">
+                    <span class="material-symbols-outlined text-gold text-[36px]">room_service</span>
+                    <h4 class="font-label-md text-[12px] uppercase tracking-widest">24/7 Butler Care</h4>
+                </div>
+                <div class="space-y-3">
+                    <span class="material-symbols-outlined text-gold text-[36px]">wifi</span>
+                    <h4 class="font-label-md text-[12px] uppercase tracking-widest">Fiber High-Speed</h4>
+                </div>
+                <div class="space-y-3">
+                    <span class="material-symbols-outlined text-gold text-[36px]">local_bar</span>
+                    <h4 class="font-label-md text-[12px] uppercase tracking-widest">Private Art Bar</h4>
+                </div>
+                <div class="space-y-3">
+                    <span class="material-symbols-outlined text-gold text-[36px]">spa</span>
+                    <h4 class="font-label-md text-[12px] uppercase tracking-widest">Aromatic Spa Bath</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Portal Section (Cost Calculator) -->
+    <section id="booking-portal" class="py-section-gap bg-surface scroll-mt-24">
+        <div class="max-w-[1000px] mx-auto px-margin-mobile">
+            <div class="bg-[#151515] border border-gold/25 rounded-DEFAULT shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 text-white">
+                
+                <!-- Left: Booking Form -->
+                <div class="p-8 md:p-12 lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-gold font-label-md text-label-md tracking-widest uppercase mb-1 block">Sanctuary Lock</span>
+                        <h2 class="font-display-lg text-[32px] text-white">Reserve Your Stay</h2>
+                    </div>
+
+                    <form id="stay-booking-form" onsubmit="handleBookStay(event)" class="space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-label-md text-[11px] text-white/70 uppercase tracking-widest mb-1.5" for="stay-name">Full Name</label>
+                                <input class="w-full bg-[#242424] border border-white/10 text-white rounded-DEFAULT px-4 py-2.5 text-[15px] focus:border-gold focus:ring-0 outline-none transition-colors" id="stay-name" type="text" placeholder="Devendra Singh" required/>
+                            </div>
+                            <div>
+                                <label class="block font-label-md text-[11px] text-white/70 uppercase tracking-widest mb-1.5" for="stay-email">Email Address</label>
+                                <input class="w-full bg-[#242424] border border-white/10 text-white rounded-DEFAULT px-4 py-2.5 text-[15px] focus:border-gold focus:ring-0 outline-none transition-colors" id="stay-email" type="email" placeholder="devendra@hotmail.com" required/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-label-md text-[11px] text-white/70 uppercase tracking-widest mb-1.5" for="stay-room">Suite Selection</label>
+                            <select onchange="updateCalculator()" class="w-full bg-[#242424] border border-white/10 text-white rounded-DEFAULT px-4 py-3 text-[15px] focus:border-gold focus:ring-0 outline-none transition-colors" id="stay-room" required>
+                                <option value="heritage" class="bg-[#151515]">Heritage Suite — $350 / Night</option>
+                                <option value="palace" class="bg-[#151515]">Royal Palace Room — $500 / Night</option>
+                                <option value="presidential" class="bg-[#151515]">Presidential Gold Suite — $950 / Night</option>
+                            </select>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-label-md text-[11px] text-white/70 uppercase tracking-widest mb-1.5" for="stay-checkin">Check-In</label>
+                                <input onchange="updateCalculator()" class="w-full bg-[#242424] border border-white/10 text-white rounded-DEFAULT px-4 py-2.5 text-[15px] focus:border-gold focus:ring-0 outline-none transition-colors" id="stay-checkin" type="date" required/>
+                            </div>
+                            <div>
+                                <label class="block font-label-md text-[11px] text-white/70 uppercase tracking-widest mb-1.5" for="stay-checkout">Check-Out</label>
+                                <input onchange="updateCalculator()" class="w-full bg-[#242424] border border-white/10 text-white rounded-DEFAULT px-4 py-2.5 text-[15px] focus:border-gold focus:ring-0 outline-none transition-colors" id="stay-checkout" type="date" required/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-label-md text-[11px] text-white/70 uppercase tracking-widest mb-1.5" for="stay-guests">Total Guests</label>
+                            <select class="w-full bg-[#242424] border border-white/10 text-white rounded-DEFAULT px-4 py-2.5 text-[15px] focus:border-gold focus:ring-0 outline-none transition-colors" id="stay-guests" required>
+                                <option value="1" class="bg-[#151515]">1 Person</option>
+                                <option value="2" class="bg-[#151515]">2 Persons</option>
+                                <option value="3" class="bg-[#151515]">3 Persons</option>
+                                <option value="4" class="bg-[#151515]">4+ Persons</option>
+                            </select>
+                        </div>
+
+                        <button class="w-full bg-gold text-primary hover:bg-white hover:text-primary transition-all duration-300 font-label-md text-label-md uppercase tracking-wider py-4 rounded-DEFAULT font-semibold" type="submit">
+                            Confirm Stay Reservation
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Live Cost Calculator Summary -->
+                <div class="bg-[#1c1c1c] text-white p-8 md:p-12 lg:col-span-5 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-white/10">
+                    <div>
+                        <span class="text-gold font-label-md text-[11px] tracking-widest uppercase mb-1 block">Live Calculation</span>
+                        <h3 class="font-headline-md text-headline-md text-white border-b border-white/10 pb-4 mb-6">Stay Summary</h3>
+                        
+                        <div class="space-y-4 text-[14px]">
+                            <div class="flex justify-between">
+                                <span class="text-white/60">Selected Suite:</span>
+                                <span id="summary-room-name" class="font-semibold">Heritage Suite</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-white/60">Rate per Night:</span>
+                                <span id="summary-rate" class="font-semibold">$350</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-white/60">Nights Stayed:</span>
+                                <span id="summary-nights" class="font-semibold">0 Nights</span>
+                            </div>
+                            
+                            <div class="border-t border-white/10 pt-4 space-y-3">
+                                <div class="flex justify-between text-[15px]">
+                                    <span class="text-white/70">Stay Subtotal:</span>
+                                    <span id="summary-subtotal" class="font-semibold">$0.00</span>
+                                </div>
+                                <div class="flex justify-between text-[15px]">
+                                    <span class="text-white/70">Luxury Tax (18%):</span>
+                                    <span id="summary-tax" class="font-semibold">$0.00</span>
+                                </div>
+                                <div class="flex justify-between text-[18px] border-t border-white/10 pt-3 text-gold">
+                                    <span class="font-bold">Estimated Total:</span>
+                                    <span id="summary-total" class="font-bold">$0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 bg-white/5 p-4 rounded-DEFAULT border border-white/10 flex items-start gap-3">
+                        <span class="material-symbols-outlined text-gold mt-0.5">info</span>
+                        <p class="text-[11px] text-white/60 leading-relaxed">Your rates are fixed during peak seasons. Full refunds allowed up to 72 hours prior to check-in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Success Booking Modal -->
+<div id="stay-success-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm hidden">
+    <div class="bg-surface border border-gold/40 p-8 md:p-12 max-w-md w-full text-center rounded-DEFAULT shadow-2xl relative">
+        <button onclick="closeStayModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <span class="material-symbols-outlined text-[64px] text-gold animate-[bounce_1.5s_infinite]">hotel_class</span>
+        <h3 class="font-display-lg text-[28px] text-primary mt-4 mb-2">Sanctuary Reserved</h3>
+        <p class="font-body-md text-on-surface-variant text-[15px]">
+            Congratulations, <span id="modal-stay-name" class="font-bold"></span>. Your majestic retreat has been successfully locked.
+        </p>
+        <div class="my-6 p-4 bg-surface-container border border-outline-variant/15 text-left rounded-DEFAULT space-y-2">
+            <div class="flex justify-between text-[13px]"><span class="text-on-surface-variant uppercase">Reserved Suite:</span> <span id="modal-stay-room" class="font-semibold text-primary"></span></div>
+            <div class="flex justify-between text-[13px]"><span class="text-on-surface-variant uppercase">Stay Period:</span> <span id="modal-stay-dates" class="font-semibold text-primary"></span></div>
+            <div class="flex justify-between text-[13px]"><span class="text-on-surface-variant uppercase">Total Amount:</span> <span id="modal-stay-total" class="font-semibold text-gold font-bold"></span></div>
+            <div class="flex justify-between text-[13px] border-t border-outline-variant/20 pt-2"><span class="text-gold uppercase font-bold">Booking ID:</span> <span id="modal-stay-id" class="font-mono text-primary font-bold"></span></div>
+        </div>
+        <p class="text-[12px] text-on-surface-variant/70 italic">A digital keys card and sanctuary guide has been dispatched to <span id="modal-stay-email" class="underline"></span>.</p>
+        <button onclick="closeStayModal()" class="mt-8 w-full bg-primary text-on-primary hover:bg-gold hover:text-primary transition-colors duration-300 py-3 rounded-DEFAULT font-label-md text-label-md uppercase tracking-widest font-semibold">
+            Return to Sanctuary
+        </button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary text-white/80 w-full py-16">
+    <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+            <div class="font-headline-lg text-[28px] text-white tracking-widest uppercase mb-4">Sukhi</div>
+            <p class="text-white/60 font-body-md leading-relaxed">Refining the art of high-end lodging and classic gastronomy through Modern Indian Heritage.</p>
+        </div>
+        <div>
+            <h4 class="font-label-md text-label-md text-gold mb-6 uppercase tracking-widest">Explore</h4>
+            <ul class="space-y-3">
+                <li><a class="hover:text-gold transition-colors text-[15px]" href="restaurant.html">Sukhi Restaurant Menu</a></li>
+                <li><a class="hover:text-gold transition-colors text-[15px]" href="hotel.html">Boutique Stay & Booking</a></li>
+                <li><a class="hover:text-gold transition-colors text-[15px]" href="index.html">The Speakeasy Lounge</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-label-md text-label-md text-gold mb-6 uppercase tracking-widest">Connect</h4>
+            <p class="text-white/60 font-body-md mb-2">108 Palace Ridge Road, Jaipur, Rajasthan</p>
+            <p class="text-white/60 font-body-md">reservations@sukhihotel.com</p>
+        </div>
+        <div>
+            <h4 class="font-label-md text-label-md text-gold mb-6 uppercase tracking-widest">Social</h4>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors" href="#">
+                    <span class="material-symbols-outlined text-[18px]">share</span>
+                </a>
+                <a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors" href="#">
+                    <span class="material-symbols-outlined text-[18px]">camera</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 text-center text-white/40 font-label-md text-[12px]">
+        © 2026 Sukhi Hotel & Restaurant. All rights reserved.
+    </div>
+</footer>
+
+<script>
+    // Room rates mapping
+    const roomRates = {
+        heritage: { name: "Heritage Suite", rate: 350 },
+        palace: { name: "Royal Palace Room", rate: 500 },
+        presidential: { name: "Presidential Gold Suite", rate: 950 }
+    };
+
+    // Pre-fill today and next day for dates
+    window.onload = function() {
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 2);
+
+        document.getElementById('stay-checkin').value = today.toISOString().split('T')[0];
+        document.getElementById('stay-checkout').value = tomorrow.toISOString().split('T')[0];
+        
+        updateCalculator();
+    };
+
+    function selectRoom(roomCode) {
+        document.getElementById('stay-room').value = roomCode;
+        updateCalculator();
+    }
+
+    // Cost Calculator Logic
+    function updateCalculator() {
+        const roomCode = document.getElementById('stay-room').value;
+        const checkinVal = document.getElementById('stay-checkin').value;
+        const checkoutVal = document.getElementById('stay-checkout').value;
+
+        if (!roomCode || !checkinVal || !checkoutVal) return;
+
+        const rateInfo = roomRates[roomCode];
+        const checkinDate = new Date(checkinVal);
+        const checkoutDate = new Date(checkoutVal);
+
+        // Calculate nights
+        const timeDiff = checkoutDate.getTime() - checkinDate.getTime();
+        let nights = Math.ceil(timeDiff / (1000 * 3600 * 24));
+        if (nights < 0) nights = 0;
+
+        const subtotal = rateInfo.rate * nights;
+        const tax = subtotal * 0.18;
+        const total = subtotal + tax;
+
+        // Update UI
+        document.getElementById('summary-room-name').innerText = rateInfo.name;
+        document.getElementById('summary-rate').innerText = "$" + rateInfo.rate;
+        document.getElementById('summary-nights').innerText = nights + " Night" + (nights !== 1 ? "s" : "");
+        document.getElementById('summary-subtotal').innerText = "$" + subtotal.toFixed(2);
+        document.getElementById('summary-tax').innerText = "$" + tax.toFixed(2);
+        document.getElementById('summary-total').innerText = "$" + total.toFixed(2);
+    }
+
+    // Handle Form Submit
+    function handleBookStay(event) {
+        event.preventDefault();
+        const name = document.getElementById('stay-name').value;
+        const email = document.getElementById('stay-email').value;
+        const roomCode = document.getElementById('stay-room').value;
+        const checkinVal = document.getElementById('stay-checkin').value;
+        const checkoutVal = document.getElementById('stay-checkout').value;
+
+        const rateInfo = roomRates[roomCode];
+        const checkinDate = new Date(checkinVal);
+        const checkoutDate = new Date(checkoutVal);
+
+        const timeDiff = checkoutDate.getTime() - checkinDate.getTime();
+        let nights = Math.ceil(timeDiff / (1000 * 3600 * 24));
+        if (nights < 1) nights = 1;
+
+        const subtotal = rateInfo.rate * nights;
+        const tax = subtotal * 0.18;
+        const total = subtotal + tax;
+
+        const bookingId = "SUKHI-STAY-" + Math.floor(1000 + Math.random() * 9000);
+
+        // Populate Modal
+        document.getElementById('modal-stay-name').innerText = name;
+        document.getElementById('modal-stay-email').innerText = email;
+        document.getElementById('modal-stay-room').innerText = rateInfo.name;
+        document.getElementById('modal-stay-dates').innerText = checkinVal + " to " + checkoutVal + " (" + nights + " Nights)";
+        document.getElementById('modal-stay-total').innerText = "$" + total.toFixed(2);
+        document.getElementById('modal-stay-id').innerText = bookingId;
+
+        // Show Modal
+        document.getElementById('stay-success-modal').classList.remove('hidden');
+    }
+
+    function closeStayModal() {
+        document.getElementById('stay-success-modal').classList.add('hidden');
+        document.getElementById('stay-booking-form').reset();
+        
+        // Reset default dates
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 2);
+        document.getElementById('stay-checkin').value = today.toISOString().split('T')[0];
+        document.getElementById('stay-checkout').value = tomorrow.toISOString().split('T')[0];
+        
+        updateCalculator();
+    }
+</script>
+
+</body>
+</html>
